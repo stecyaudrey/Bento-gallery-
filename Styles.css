@@ -1,0 +1,38 @@
+.bento-cont {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-auto-rows: 200px;
+  gap: 15px;
+  padding: 15px;
+}
+.item {
+  background: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.feat {
+  grid-row: span 2;
+  background-color: #4555bd;
+  
+}
+.wide {
+  grid-column: span 2;
+  background-color: pink;
+}
+@media (min-width: 650px) {
+.feat {
+  grid-row: span 2;
+  background-color: lightgreen;
+  font-size: 18px;
+}
+.wide {
+  grid-column: span 2;
+  background-color: royalblue;
+  font-size: 18px;
+}
+}
